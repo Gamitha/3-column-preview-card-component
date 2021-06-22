@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://codepen.io/pen/?template=KKWLYGx](https://codepen.io/pen/?template=KKWLYGx)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://3-column-preview-card-component-ebon.vercel.app/]https://3-column-preview-card-component-ebon.vercel.app/)
 
 
 ## My process

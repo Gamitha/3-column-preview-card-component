@@ -1,0 +1,116 @@
+:root {
+    --clr-primary-orange: hsl(31, 77%, 52%);
+    --clr-primary-cyan-400: hsl(184, 100%, 22%);
+    --clr-primary-cyan-900: hsl(179, 100%, 13%);
+    --ff-header: 'Big Shoulders Display', cursive;
+    --ff-body: 'Lexend Deca', sans-serif;
+}
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+p,
+a {
+    margin: 0;
+}
+
+body {
+    font-family: var(--ff-body);
+    font-size: 1.3rem;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: var(--ff-header);
+    text-transform: uppercase;
+    margin-block: 2rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    background-color: white;
+    width: fit-content;
+    padding: 1em 2.5em;
+    border-radius: 100px;
+    font-size: .7em;
+    margin-top: 5rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: min(90%, 80rem);
+    margin-inline: auto;
+}
+
+.card {
+    padding: 2.5em;
+    color: white;
+}
+
+.bg-orange {
+    background-color: var(--clr-primary-orange);
+}
+
+.bg-orange>a {
+    color: var(--clr-primary-orange);
+}
+
+.bg-cyan {
+    background-color: var(--clr-primary-cyan-400);
+}
+
+.bg-cyan>a {
+    color: var(--clr-primary-cyan-400);
+}
+
+.bg-dark-cyan {
+    background-color: var(--clr-primary-cyan-900);
+}
+
+.bg-dark-cyan>a {
+    color: var(--clr-primary-cyan-900);
+}
+
+@media(min-width: 40em) {
+    .container {
+        flex-direction: row;
+    }
+
+    .card>a:hover {
+        border: 1px solid white;
+        color: white;
+        transition: all 300ms;
+    }
+
+    .bg-orange>a:hover {
+        background-color: var(--clr-primary-orange);
+    }
+
+    .bg-cyan>a:hover {
+        background-color: var(--clr-primary-cyan-400);
+    }
+
+    .bg-dark-cyan>a:hover {
+        background-color: var(--clr-primary-cyan-900);
+    }
+
+}
